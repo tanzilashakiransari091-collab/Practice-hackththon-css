@@ -1,0 +1,296 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* HEADER */
+header {
+    background: #fff9f4;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 70px;      /* Logo size */
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #3D4FF3;
+}
+
+/* COVER SECTION */
+#cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 30px;
+}
+
+.cover-text {
+    flex: 1;
+    text-align: right;
+}
+
+.cover-text p {
+    margin: 20px 0;
+}
+
+.cover-text button {
+    background: #3D4FF3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cover-image {
+    flex: 1;
+}
+
+.cover-image img {
+    width: 100%;
+    max-width: 500px;   /* Adjust right image size */
+    height: auto;
+}
+
+/* SECTION TITLES */
+section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+/* CARDS */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.card-body,
+.card-footer,
+.card-body h4,
+.card-body p {
+    text-align: left; /* Left aligned for casual/formal shoes */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-footer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer button {
+    background: #3D4FF3;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.price {
+    color: #ff8367;
+    font-weight: bold;
+}
+
+/* SERVICES */
+#services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 10%;
+    gap: 30px;
+}
+
+.left-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-cards img {
+    width: 80px;    /* Service icon size */
+    height: auto;
+}
+
+.right-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-image img {
+    width: 400px;   /* Big image on right */
+    height: auto;
+}
+
+/* SUBSCRIBE */
+#subscribe {
+    padding: 50px 10%;
+}
+
+.subscribe-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.subscribe-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.subscribe-row input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.subscribe-row button {
+    padding: 10px 20px;
+    background: #3D4FF3;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #f8f9fa;
+    padding: 40px 10%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-col h5 {
+    margin-bottom: 15px;
+}
+
+.footer-col ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #000;
+    font-weight: 500;
+}
+
+.footer-col ul li a:hover {
+    color: #ff8367;
+}
+
+footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    #cover {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cover-text {
+        text-align: center;
+    }
+    #services {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-image {
+        justify-content: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* SERVICES WRAPPER BOX */
+.left-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;               /* Space inside the box */
+    border: 2px solid #ccc;      /* Border for the box */
+    border-radius: 15px;          /* Rounded corners */
+    background: #fff;            /* Optional: make it stand out */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Soft shadow */
+}
+
+/* Individual service card inside the box */
+.service-card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #eee;   /* Border for individual cards */
+    border-radius: 10px;
+    background: #fdfdfd;       /* Slightly different bg if you like */
+}
